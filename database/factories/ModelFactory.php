@@ -38,7 +38,7 @@ $factory->define(App\FlightLog::class, function (Faker\Generator $faker) {
         'bn'=>$faker->numberBetween(1,320),
         'atd'=>$faker->time(),
         'ata'=>$faker->time(),
-        'reg'=>'B'.$faker->numberBetween(1000,9999),
+        'reg'=>'B-'.$faker->numberBetween(1000,9999),
         'departure_runway'=>sprintf("%2d",$faker->numberBetween(1,36)),
         'arrival_runway'=>sprintf("%2d",$faker->numberBetween(1,36)),
         'boarding_pass'=>$faker->imageUrl(),

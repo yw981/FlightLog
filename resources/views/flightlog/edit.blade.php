@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2" role="main">
-                {!! Form::model($discussion,['method'=>'PATCH','url'=>'discussion/'.$discussion->id]) !!}
-                @include('forum.form')
+                {!! Form::model($fl,['method'=>'PATCH','url'=>'flightlog/'.$fl->id]) !!}
+                @include('flightlog.form')
                 <div>
                     {!! Form::submit('Submit Edit',['class'=>'btn btn-primary pull-right']) !!}
                 </div>

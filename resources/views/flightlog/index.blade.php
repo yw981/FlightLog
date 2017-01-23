@@ -3,7 +3,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1>Flight Logs
-                <a class="btn btn-lg btn-danger pull-right" href="{{ url('discussion/create') }}" role="button">create post »</a>
+                <a class="btn btn-lg btn-danger pull-right" href="{{ url('flightlog/create') }}" role="button">create post »</a>
             </h1>
         </div>
 
