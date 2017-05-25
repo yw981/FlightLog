@@ -10,7 +10,7 @@ use App\Http\Requests;
 class FlightLogController extends Controller
 {
     public function index(){
-        $flight_logs = FlightLog::all();
+        $flight_logs = FlightLog::latest()->get();
         //dd($flight_logs);
         return view('flightlog.index',compact('flight_logs',$flight_logs));
     }

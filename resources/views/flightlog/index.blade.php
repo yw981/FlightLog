@@ -10,8 +10,21 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-9" role="main">
+            <div class="col-md-10 col-md-offset-1" role="main">
+
                 @foreach($flight_logs as $fl)
+                    <a href="#">
+                        <div class="fl media">
+                            <div class="title media-body">
+                                <h4 class="media-heading"><a href="/flightlog/{{ $fl->id }}">{{ $fl->flight_no }}</a></h4>
+
+                            </div>
+                            <div class="body media-body">
+
+                            </div>
+                        </div>
+                    </a>
+
                     <div class="media">
                         <div class="media-left">
                             <a href="#">
@@ -19,11 +32,11 @@
                             </a>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading"><a href="/discussion/{{ $fl->id }}">{{ $fl->flight_no }}</a></h4>
+                            <h4 class="media-heading"><a href="/flightlog/{{ $fl->id }}">{{ $fl->flight_no }}</a></h4>
                             {{ $fl->user->name }}
                             <div class="media-conversation-meta">
                                 <span class="media-conversation-replies">
-                                    <a href="/discussion/154#reply">3</a>
+                                    <a href="/flightlog/154#reply">3</a>
                                     Replies
                                 </span>
                             </div>
